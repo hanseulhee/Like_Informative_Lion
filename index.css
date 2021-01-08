@@ -41,6 +41,11 @@ video {
   margin: 5vw;
 }
 
+.main{
+  background-color: white;
+  width: 100%;
+}
+
 /* @media screen and (max-width: 1000px){
   .navbar{
     background-color: blueviolet;
