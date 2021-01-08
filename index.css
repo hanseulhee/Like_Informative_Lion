@@ -4,12 +4,17 @@ body {
   padding: 0;
 }
 
-video {
+
+
+.fullscreen-bg__video {
   position: relative;
+  top: 0;
+  left: 0;
   width: 100%;
-  animation: fadeln 0.5s linear;
-  z-index: -1;
+  height: 100%;
+
 }
+
 
 .navbar {
   width: 100vw;
@@ -42,8 +47,24 @@ video {
 }
 
 .main{
-  background-color: white;
-  width: 100%;
+ position: relative;
+  width: 600px;
+ 
+  padding: 70px 90px;
+
+}
+
+.maintitle{
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.content{
+  font-size: 25px;
+}
+.whatlion{
+  width: 500px;
+  height: 400px;
 }
 
 /* @media screen and (max-width: 1000px){
