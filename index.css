@@ -2,7 +2,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-
 }
 
 .fullscreen-bg__video {
@@ -14,20 +13,17 @@ body {
 }
 
 .navbar {
-  
   z-index: 0;
   display: flex;
   flex-direction: row;
   position: absolute;
   top: 80px;
-
 }
 
 .logo,
 .menu {
   font-size: 20px;
   padding-left: 130px;
-
 }
 
 .menu > a {
@@ -87,42 +83,26 @@ body {
   font-size: 30px;
   padding-bottom: 20px;
 }
-.content{
+.content {
   font-size: 18px;
 }
 
-.content1{
+.content1 {
   margin-top: 150px;
   font-size: 18px;
 }
 
-.slide{
+.slide {
   display: flex;
-  overflow-x:scroll ;
-margin-bottom: 30px;
-padding-left: 150px;
+  overflow-x: scroll;
+  margin-bottom: 30px;
+  padding-left: 150px;
 }
-
-
 
 .slide::-webkit-scrollbar {
   display: none;
   height: 10px;
-  
-
 }
-/* .slide::-webkit-scrollbar-thumb {
-  background-color: #2f3542;
-  border-radius: 2px;
-  background-clip: padding-box;
-  border: 5px solid transparent;
-  
-}
-.slide::-webkit-scrollbar-track {
-  background-color: #c9c9c9;
-  border-radius:4px;
- 
-} */
 
 .slide_item {
   width: 70vw;
@@ -131,4 +111,71 @@ padding-left: 150px;
   border-radius: 4px;
 }
 
+.target {
+  padding-left: 2px;
+  height: 800px;
+}
 
+.thirdtitle {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.explain {
+  font-size: 15px;
+  padding-bottom: 100px;
+  width: 200px;
+}
+
+.contentbox {
+  width: 250px;
+  height: 220px;
+
+  padding-bottom: 60px;
+  padding-right: 90px;
+}
+
+.two,
+.third,
+.four {
+  display: flex;
+
+  flex-direction: row;
+}
+
+.title1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.content2 {
+  font-size: 16px;
+  color: #A7A7A7;
+}
+
+.whatlion2 {
+  padding-top: 50px;
+  width: 650px;
+  height: 1100px;
+}
+
+.info {
+  letter-spacing: 2px;
+  font-size: 17px;
+  font-weight: bold;
+  padding-bottom: 70px;
+}
+
+.link {
+  all: unset;
+  color: black;
+
+  font-size: 24px;
+  font-weight: bold;
+}
+
+hr {
+  height: 2px;
+  width: 50%;
+  background-color: black;
+}
