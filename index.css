@@ -32,6 +32,7 @@ body {
   color: white;
   margin: 1vw;
   padding-left: 33px;
+  font-weight: bold;
 }
 
 .title {
@@ -40,6 +41,7 @@ body {
   color: white;
   top: 240px;
   margin: 5vw;
+  font-weight: 600;
 }
 
 .main {
@@ -113,19 +115,10 @@ body {
 
 .target {
   padding-left: 2px;
-  height: 800px;
+  height: 760px;
 }
 
-.thirdtitle {
-  font-weight: 700;
-  font-size: 35px;
-}
 
-.explain {
-  font-size: 15px;
-  padding-bottom: 100px;
-  width: 200px;
-}
 
 .contentbox {
   width: 250px;
@@ -149,7 +142,7 @@ body {
 }
 
 .content2 {
-  font-size: 16px;
+  font-size: 17px;
   color: #A7A7A7;
 }
 
@@ -174,8 +167,47 @@ body {
   font-weight: bold;
 }
 
+
+.link:hover{
+  color:#f79e1c;
+  transition: ease-in 0.3s;
+}
 hr {
   height: 2px;
   width: 50%;
   background-color: black;
+}
+hr:hover{
+  
+  background-color:#F79E1C;
+  transition: ease-in 0.3s;
+  
+}
+
+
+.endtitle{
+  font-weight: 700;
+  font-size: 33px;
+  padding-left: 70px;
+  padding-bottom: 50px;
+}
+
+.endphoto1{
+ 
+  width: 600px;
+  height: 700px;
+
+}
+
+
+.endphoto2{
+  
+  width: 600px;
+  height: 700px;
+}
+
+.endbox{
+  display: flex;
+  flex-direction: row;
+ padding-left:160px;
 }
