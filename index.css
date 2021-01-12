@@ -99,11 +99,13 @@ body {
   overflow-x: scroll;
   margin-bottom: 30px;
   padding-left: 150px;
+  cursor: move;
 }
 
 .slide::-webkit-scrollbar {
   display: none;
   height: 10px;
+  cursor: move;
 }
 
 .slide_item {
@@ -111,14 +113,13 @@ body {
   height: 77vh;
   padding-right: 30px;
   border-radius: 4px;
+  cursor: move;
 }
 
 .target {
   padding-left: 2px;
   height: 760px;
 }
-
-
 
 .contentbox {
   width: 250px;
@@ -143,7 +144,7 @@ body {
 
 .content2 {
   font-size: 17px;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
 .whatlion2 {
@@ -165,49 +166,146 @@ body {
 
   font-size: 24px;
   font-weight: bold;
+  cursor: pointer;
 }
 
-
-.link:hover{
-  color:#f79e1c;
-  transition: ease-in 0.3s;
+.link:hover {
+  color: #f79e1c;
+  transition: ease-in 0.5s;
+  cursor: pointer;
 }
 hr {
   height: 2px;
   width: 50%;
   background-color: black;
+  cursor: pointer;
 }
-hr:hover{
-  
-  background-color:#F79E1C;
+hr:hover {
+  background-color: #f79e1c;
   transition: ease-in 0.3s;
-  
+  cursor: pointer;
 }
 
-
-.endtitle{
+.endtitle {
   font-weight: 700;
-  font-size: 33px;
+  font-size: 30px;
   padding-left: 70px;
   padding-bottom: 50px;
 }
 
-.endphoto1{
- 
+.endphoto1 {
   width: 600px;
   height: 700px;
 
+  position: relative;
 }
 
+.goevent,
+.goevent1 {
+  all: unset;
+  background-color: white;
+  color: black;
+  width: 430px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  margin-top: 450px;
+  margin-left: 44px;
+  padding-left: 80px;
+}
 
-.endphoto2{
-  
+.goevent:hover,
+.goevent1:hover {
+  height: 170px;
+  cursor: pointer;
+
+  transform: scale(1.1);
+
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+
+  -webkit-transform: scale(1.1);
+
+  transition: transform 0.8s;
+  -o-transition: transform 0.8s;
+  -moz-transition: transform 0.8s;
+  -webkit-transition: transform 0.8s;
+}
+
+.frame1 {
+  position: relative;
+}
+
+.frame2 {
+  position: relative;
+}
+
+.goeventtitle,
+.goeventtitle1 {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.goeventcontent,
+.goeventcontent1 {
+  color: #a7a7a7;
+
+  font-size: 15px;
+}
+.endphoto1:hover {
+  cursor: pointer;
+
+  transform: scale(
+    1.1
+  ); 
+  -moz-transform: scale(1.1);
+
+  -webkit-transform: scale(1.1);
+
+  transition: transform 0.6s;
+  -o-transition: transform 0.6s;
+  -moz-transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+}
+
+.endphoto2 {
   width: 600px;
   height: 700px;
 }
 
-.endbox{
+.endphoto2:hover {
+  cursor: pointer;
+
+  transform: scale(1.1);
+
+  -o-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+
+  -webkit-transform: scale(1.1);
+
+  transition: transform 0.6s;
+  -o-transition: transform 0.6s;
+  -moz-transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+}
+
+.endbox {
+  overflow: hidden;
+  width: 600px;
+  height: 700px;
+}
+
+.endbox1 {
+  overflow: hidden;
+  width: 600px;
+  height: 700px;
+}
+
+.endframe {
   display: flex;
   flex-direction: row;
- padding-left:160px;
+  padding-left: 163px;
 }
