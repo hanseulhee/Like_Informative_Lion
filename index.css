@@ -174,13 +174,13 @@ body {
   transition: ease-in 0.5s;
   cursor: pointer;
 }
-hr {
+.move {
   height: 2px;
   width: 50%;
   background-color: black;
   cursor: pointer;
 }
-hr:hover {
+.move:hover {
   background-color: #f79e1c;
   transition: ease-in 0.3s;
   cursor: pointer;
@@ -308,4 +308,50 @@ hr:hover {
   display: flex;
   flex-direction: row;
   padding-left: 163px;
+}
+
+
+
+
+
+a > img{
+  padding-right: 30px;
+  
+}
+
+.footertitle{
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+  
+}
+
+.footercontent{
+  color: #a7a7a7;
+
+  font-size: 15px;
+}
+
+.footer{
+  all:unset;
+  display: flex;
+  flex-direction: row;
+  
+  margin: 62px 230px;
+  justify-content:space-between;
+}
+
+.row{
+  all:unset;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+  
+}
+
+.row > p {
+  all:unset;
+ justify-content: center;
+ padding-left: 30px;
+ font-size: 17px;
 }
