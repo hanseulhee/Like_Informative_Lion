@@ -262,6 +262,8 @@ body {
 .endphoto1 {
   width: 600px;
   height: 700px;
+  
+  cursor: pointer;
 
   position: relative;
 }
@@ -280,6 +282,7 @@ body {
   margin-top: 450px;
   margin-left: 44px;
   padding-left: 80px;
+  cursor: pointer;
 }
 
 .goevent:hover,
@@ -287,17 +290,12 @@ body {
   height: 170px;
   cursor: pointer;
 
-  transform: scale(1.1);
+  transform: scaleY(1.1);
 
-  -o-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-
-  -webkit-transform: scale(1.1);
-
-  transition: transform 0.8s;
-  -o-transition: transform 0.8s;
-  -moz-transition: transform 0.8s;
-  -webkit-transition: transform 0.8s;
+  transition: transform 0.9s;
+  -o-transition: transform 0.9s;
+  -moz-transition: transform 0.9s;
+  -webkit-transition: transform 0.9s;
 }
 
 .frame1 {
@@ -340,6 +338,8 @@ body {
 
 .endphoto2 {
   width: 600px;
+  
+  cursor: pointer;
   height: 700px;
 }
 
@@ -382,7 +382,7 @@ body {
 
 
 a > img{
-  padding-right: 30px;
+  padding-right: 50px;
   
 }
 
@@ -394,9 +394,13 @@ a > img{
 }
 
 .footercontent{
-  color: #a7a7a7;
+  color: black;
+  
+  font-family: 'Noto Sans KR', sans-serif;
 
-  font-size: 15px;
+  font-size: 14px;
+  width: 300px;
+  height: 170px;
 }
 
 .footer{
@@ -404,15 +408,24 @@ a > img{
   display: flex;
   flex-direction: row;
   
-  margin: 62px 230px;
+  margin: 62px 100px;
   justify-content:space-between;
 }
+.rowframe > p {
+  all: unset;
+  color: black;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+ font-size: 20px;
+}
+
 
 .row{
   all:unset;
   display: flex;
   flex-direction: row;
   padding-bottom: 30px;
+  padding-top: 20px;
   
 }
 
@@ -421,7 +434,19 @@ a > img{
  justify-content: center;
  padding-left: 30px;
  font-size: 17px;
+ 
+ font-family: 'Noto Sans', sans-serif;
 }
+.github{
+  all:unset;
+  justify-content: center;
+ padding-left: 30px;
+ font-size: 17px;
+ 
+ font-family: 'Noto Sans', sans-serif;
+
+}
+
 
 .gotop{
   all: unset;
@@ -452,3 +477,4 @@ left: 1400px;
   font-weight: bold;
   font-family: 'Noto Sans', sans-serif;
 }
+
