@@ -379,9 +379,12 @@ body {
 
 
 
-
+.rowframe1 > a{
+  all: unset;
+}
 
 a > img{
+ 
   padding-right: 50px;
   
 }
