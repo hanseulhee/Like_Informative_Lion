@@ -435,7 +435,7 @@ a > img{
 .row > p {
   all:unset;
  justify-content: center;
- padding-left: 30px;
+ padding-left: 1px;
  font-size: 17px;
  
  font-family: 'Noto Sans', sans-serif;
@@ -443,7 +443,7 @@ a > img{
 .github{
   all:unset;
   justify-content: center;
- padding-left: 30px;
+  padding-left: 1px;
  font-size: 17px;
  
  font-family: 'Noto Sans', sans-serif;
