@@ -3,7 +3,10 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+
 }
+
+
 
 .fullscreen-bg__video {
   position: relative;
@@ -19,51 +22,55 @@ body {
   flex-direction: row;
   position: absolute;
   top: 80px;
+
 }
 
 .logo,
 .menu {
   font-size: 20px;
   padding-left: 81px;
-  font-family: 'Noto Sans KR', sans-serif;
-  
+  font-family: "Noto Sans KR", sans-serif;
+
   letter-spacing: 2px;
   font-weight: 700;
 }
 
-
 .logo > a {
   all: unset;
-  font-size: 24px;  color: white;
+  font-size: 24px;
+  color: white;
+  
 }
-
 
 .menu > a {
   all: unset;
   font-size: 18px;
   color: white;
   margin: 1vw;
-  padding-left: 60px;
-  
+  padding-left: 65px;
+
   text-shadow: 2px 4px 2px rgb(0, 0, 0, 0.1);
   letter-spacing: 2px;
+  animation-duration: 6s;
+  animation-name: slide;
+  animation-fill-mode:forwards;
 
+ 
 }
 
 .title {
   position: absolute;
-  font-size: 88px;
+  font-size: 84px;
   color: white;
   top: 230px;
   margin: 5vw;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
  
- 
 }
 
-.subheading{
+.subheading {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -71,25 +78,24 @@ body {
   color: WHITE;
 
   top: 660px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 700;
-  margin-left: 80PX;
-
-
+  margin-left: 80px;
+ 
+  
   
 }
 
-.subheading1{
+.subheading1 {
   position: absolute;
   all: unset;
   font-size: 23px;
   top: 700px;
-  font-family: 'Noto Sans', sans-serif;
-  margin-left: 2PX;
+  font-family: "Noto Sans", sans-serif;
+  margin-left: 2px;
   color: rgb(255, 255, 255, 0.6);
  
 }
-
 
 .main {
   position: relative;
@@ -100,10 +106,10 @@ body {
 
 .maintitle {
   font-weight: 700;
-  font-size: 35px;
+  font-size: 33px;
   padding-bottom: 20px;
-  
-  font-family: 'Noto Sans KR', sans-serif;
+
+  font-family: "Noto Sans KR", sans-serif;
   font-weight: 700;
 }
 
@@ -115,14 +121,12 @@ body {
   padding-top: 50px;
   width: 600px;
   height: 980px;
- 
 }
 
-.curriculum{
+.curriculum {
   padding-top: 50px;
   width: 600px;
   height: 950px;
-
 }
 
 .first {
@@ -134,8 +138,6 @@ body {
 .calendar {
   padding-left: 50px;
   height: 330px;
-  
-  
 
   border-left: 2px solid rgb(0, 0, 0, 0.5);
 }
@@ -143,14 +145,14 @@ body {
 .secondtitle {
   font-weight: 700;
   font-size: 30px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-weight: 700;
   padding-bottom: 20px;
 }
 .content {
   font-size: 18px;
-  
-  font-family: 'Noto Sans KR', sans-serif;
+
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .content1 {
@@ -163,13 +165,13 @@ body {
   overflow-x: scroll;
   margin-bottom: 30px;
   padding-left: 150px;
-  cursor: move;
+  cursor: grab;
 }
 
 .slide::-webkit-scrollbar {
   display: none;
   height: 10px;
-  cursor: move;
+  cursor: grab;
 }
 
 .slide_item {
@@ -177,7 +179,7 @@ body {
   height: 77vh;
   padding-right: 30px;
   border-radius: 4px;
-  cursor: move;
+  cursor: grab;
 }
 
 .target {
@@ -204,13 +206,13 @@ body {
 .title1 {
   font-size: 30px;
   font-weight: 500;
-  font-family: 'Hind Siliguri', sans-serif;
+  font-family: "Hind Siliguri", sans-serif;
 }
 
 .content2 {
   font-size: 17px;
-  
-  color: #a7a7a7;
+
+  color: #7c7c7c;
 }
 
 .whatlion2 {
@@ -241,7 +243,7 @@ body {
   cursor: pointer;
 }
 .move {
-  height: 2px;
+  height: 1.5px;
   width: 50%;
   background-color: black;
   cursor: pointer;
@@ -257,12 +259,14 @@ body {
   font-size: 30px;
   padding-left: 70px;
   padding-bottom: 50px;
+  
+  font-family: "Noto Sans", sans-serif;
 }
 
 .endphoto1 {
   width: 600px;
   height: 700px;
-  
+
   cursor: pointer;
 
   position: relative;
@@ -312,33 +316,34 @@ body {
   color: black;
   font-size: 25px;
   font-weight: bold;
+  
+  font-family: "Noto Sans", sans-serif;
 }
 
 .goeventcontent,
 .goeventcontent1 {
   color: #a7a7a7;
 
+  font-family: "Noto Sans", sans-serif;
   font-size: 15px;
 }
 .endphoto1:hover {
   cursor: pointer;
 
-  transform: scale(
-    1.1
-  ); 
+  transform: scale(1.1);
   -moz-transform: scale(1.1);
 
   -webkit-transform: scale(1.1);
 
-  transition: transform 0.6s;
-  -o-transition: transform 0.6s;
-  -moz-transition: transform 0.6s;
-  -webkit-transition: transform 0.6s;
+  transition: transform 0.8s;
+  -o-transition: transform 0.8s;
+  -moz-transition: transform 0.8s;
+  -webkit-transition: transform 0.8s;
 }
 
 .endphoto2 {
   width: 600px;
-  
+
   cursor: pointer;
   height: 700px;
 }
@@ -353,10 +358,10 @@ body {
 
   -webkit-transform: scale(1.1);
 
-  transition: transform 0.6s;
-  -o-transition: transform 0.6s;
-  -moz-transition: transform 0.6s;
-  -webkit-transition: transform 0.6s;
+  transition: transform 0.8s;
+  -o-transition: transform 0.8s;
+  -moz-transition: transform 0.8s;
+  -webkit-transition: transform 0.8s;
 }
 
 .endbox {
@@ -377,107 +382,351 @@ body {
   padding-left: 163px;
 }
 
-
-
-.rowframe1 > a{
+.rowframe1 > a {
   all: unset;
 }
 
-a > img{
- 
+a > img {
   padding-right: 50px;
-  
 }
 
-.footertitle{
+.footertitle {
   color: black;
   font-size: 25px;
   font-weight: 600;
-  
 }
 
-.footercontent{
+.footercontent {
   color: black;
-  
-  font-family: 'Noto Sans KR', sans-serif;
+
+  font-family: "Noto Sans KR", sans-serif;
 
   font-size: 14px;
   width: 300px;
   height: 170px;
 }
 
-.footer{
-  all:unset;
+.footer {
+  all: unset;
   display: flex;
   flex-direction: row;
-  
-  margin: 62px 100px;
-  justify-content:space-between;
+
+  margin: 69px 100px;
+  justify-content: space-between;
 }
 .rowframe > p {
   all: unset;
   color: black;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: 700;
- font-size: 20px;
+  font-size: 17px;
 }
 
-
-.row{
-  all:unset;
+.row {
+  all: unset;
   display: flex;
   flex-direction: row;
   padding-bottom: 30px;
   padding-top: 20px;
-  
 }
 
 .row > p {
-  all:unset;
- justify-content: center;
- padding-left: 1px;
- font-size: 17px;
- 
- font-family: 'Noto Sans', sans-serif;
-}
-.github{
-  all:unset;
+  all: unset;
   justify-content: center;
   padding-left: 1px;
- font-size: 17px;
- 
- font-family: 'Noto Sans', sans-serif;
+  font-size: 17px;
 
+  font-family: "Noto Sans", sans-serif;
+}
+.github {
+  all: unset;
+  justify-content: center;
+  padding-left: 1px;
+  font-size: 17px;
+
+  font-family: "Noto Sans", sans-serif;
+  cursor: pointer;
 }
 
-
-.gotop{
+.gotop {
   all: unset;
   position: relative;
   color: black;
   font-size: 30px;
-left: 1400px;
-  
+  left: 1400px;
 }
 
-
-
-.number{
+.number {
   all: unset;
-  
+
   display: flex;
   flex-direction: row;
- 
+
   margin: 60px 180px;
-
-  
-  
 }
 
-.Label{
+.Label {
   all: unset;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
+
+
+
+
+
+
+.center {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+
+}
+
+.center:first-of-type {
+  animation: showup 12s;
+ 
+}
+
+.center:last-of-type {
+  width:0px;
+  animation: reveal 8s;
+  
+  animation-fill-mode :forwards;
+  
+}
+
+.center:last-of-type span {
+  margin-left:-355px;
+  animation: slidein 9s;
+  animation-fill-mode :forwards;
+  
+  
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:1;width:355px;}
+}
+
+
+
+@keyframes slide {
+  from {
+    
+    width: 98%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+
+.sign{
+  all: unset;
+  padding-left: 9px;
+  font-family: "Noto Sans KR", sans-serif;
+transform: translate(-50%, -50%);
+letter-spacing: 2;
+
+text-transform: uppercase;
+font-size: 24px;
+color: white;
+text-shadow: 0 0 0.1rem#dcdde1, 0 0 0.1rem #dfe6e9,
+  -0.2rem 0.1rem 1rem #3d3d3d, 0.1rem 0.1rem 1rem#3d3d3d,
+  0 -0.3rem 1rem #3d3d3d, 0 0.3rem 1rem#3d3d3d;
+animation: shine 2s forwards, flicker 3s;
+animation-iteration-count: 1;
+}
+
+@keyframes blink {
+0%,
+22%,
+36%,
+75% {
+  color:white;
+  text-shadow: 0 0 0.1rem #dcdde1, 0 0 0.1rem#dfe6e9,
+    -0.2rem 0.1rem 0.2rem #4b4b4b, 0.1rem 0.1rem 0.2rem #4b4b4b,
+    0 -0.3rem 1rem#3d3d3d, 0 0.3rem 1rem#3d3d3d;
+}
+28%,
+33% {
+  color: white;
+  text-shadow: none;
+}
+82%,
+97% {
+  color: white;
+  text-shadow: none;
+}
+}
+
+.flicker {
+animation: shine 4s forwards, blink 4s 3s;
+animation-iteration-count: 1;
+}
+
+.fast-flicker {
+animation: shine 5s forwards, blink 5s 3s;
+animation-iteration-count: 1;
+}
+
+@keyframes shine {
+0% {
+
+  text-shadow: none;
+}
+100% {
+  color: rgb(255, 255, 255, 0.7);
+  text-shadow: 0 0 0.1rem #dfe6e9, 0 0 0.1rem #dfe6e9,
+    -0.1rem 0.1rem 0.2rem  #4b4b4b, 0.1rem 0.1rem 0.2rem #4b4b4b,
+    0 -0.3rem 1rem#3d3d3d, 0 0.3rem 1rem #3d3d3d;
+}
+}
+
+@keyframes flicker {
+from {
+  opacity: 1;
+}
+
+4% {
+  opacity: 0.9;
+}
+
+6% {
+  opacity: 0.9;
+}
+
+8% {
+  opacity: 0.95;
+}
+
+10% {
+  opacity: 0.9;
+}
+
+11% {
+  opacity: 0.922;
+}
+
+12% {
+  opacity: 0.9;
+}
+
+14% {
+  opacity: 0.95;
+}
+
+16% {
+  opacity: 0.98;
+}
+
+17% {
+  opacity: 0.9;
+}
+
+19% {
+  opacity: 0.93;
+}
+
+20% {
+  opacity: 0.99;
+}
+
+24% {
+  opacity: 1;
+}
+
+26% {
+  opacity: 0.94;
+}
+
+28% {
+  opacity: 0.98;
+}
+
+37% {
+  opacity: 0.93;
+}
+
+38% {
+  opacity: 0.5;
+}
+
+39% {
+  opacity: 0.96;
+}
+
+42% {
+  opacity: 1;
+}
+
+44% {
+  opacity: 0.97;
+}
+
+46% {
+  opacity: 0.94;
+}
+
+56% {
+  opacity: 0.9;
+}
+
+58% {
+  opacity: 0.9;
+}
+
+60% {
+  opacity: 0.99;
+}
+
+68% {
+  opacity: 1;
+}
+
+70% {
+  opacity: 0.9;
+}
+
+72% {
+  opacity: 0.95;
+}
+
+93% {
+  opacity: 0.93;
+}
+
+95% {
+  opacity: 0.95;
+}
+
+97% {
+  opacity: 0.93;
+}
+
+to {
+  opacity: 1;
+}
+}
