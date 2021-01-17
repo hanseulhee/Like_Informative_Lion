@@ -1,8 +1,14 @@
-html,
+
 body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 img {
@@ -10,7 +16,7 @@ img {
 }
 
 .fullscreen-bg {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -42,17 +48,20 @@ img {
 }
 
 .navbar {
+  position: relative;
   z-index: 0;
+  width: 100vw;
+  height: 20vh;
+
   display: flex;
   flex-direction: row;
-  position: absolute;
-  top: 80px;
+  justify-content: space-around;
+  align-items: center;
   cursor: pointer;
 }
 
 .logo,
 .menu {
-  padding-left: 81px;
   font-family: "Noto Sans KR", sans-serif;
 
   letter-spacing: 2px;
@@ -84,45 +93,11 @@ img {
   color: white;
 }
 
-.title {
-  position: absolute;
-  font-size: 84px;
-  color: white;
-  top: 230px;
-  margin: 5vw;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-.subheading {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  font-size: 28px;
-  color: WHITE;
-
-  top: 650px;
-  font-family: "Noto Sans", sans-serif;
-  font-weight: 700;
-  margin-left: 80px;
-}
-
-.subheading1 {
-  position: absolute;
-  all: unset;
-  font-size: 23px;
-  top: 700px;
-  font-family: "Noto Sans", sans-serif;
-  margin-left: 2px;
-  color: rgb(255, 255, 255, 0.6);
-}
-
 .main {
   position: relative;
   width: 600px;
-
-  padding: 70px 90px;
+  padding: 5vh 10vw;
+  /* padding: 70px 90px; */
 }
 
 .maintitle {
@@ -171,7 +146,10 @@ img {
 .first {
   display: flex;
   flex-direction: row;
-  padding: 70px 90px;
+  justify-content: space-between;
+
+  overflow: hidden;
+  width: 100vw;
 }
 
 .calendar {
@@ -200,13 +178,17 @@ img {
 }
 
 .slide {
+  align-self: flex-end;
   display: flex;
+  
+  
   overflow-x: scroll;
   margin-bottom: 30px;
-  padding-left: 150px;
-
+  
   padding-top: 10%;
   cursor: grab;
+
+  width: 92vw;
 }
 
 .slide::-webkit-scrollbar {
@@ -337,92 +319,6 @@ img {
 
   font-family: "Noto Sans", sans-serif;
 }
-/* 
-.endphoto2 {
-  width: 600px;
-
-  cursor: pointer;
-  height: 700px;
-}
-
-.endphoto2:hover {
-  cursor: pointer;
-
-  transform: scale(1.1);
-
-  -o-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-
-  -webkit-transform: scale(1.1);
-
-  transition: transform 0.8s;
-  -o-transition: transform 0.8s;
-  -moz-transition: transform 0.8s;
-  -webkit-transition: transform 0.8s;
-} */
-
-/* .goevent,
-.goevent1 {
-  position: absolute;
-
-  all: unset;
-  background-color: white;
-  color: black;
-  width: 430px;
-  height: 150px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  margin-top: 450px;
-  margin-left: 44px;
-  padding-left: 80px;
-  cursor: pointer;
-
-  transition: transform 0.9s;
-  -o-transition: transform 0.9s;
-  -moz-transition: transform 0.9s;
-  -webkit-transition: transform 0.9s;
-}
-
-.goevent:hover,
-.goevent1:hover {
-  height: 170px;
-  cursor: pointer;
-
-  transform: scaleY(1.1);
-
-  transition: transform 0.9s;
-  -o-transition: transform 0.9s;
-  -moz-transition: transform 0.9s;
-  -webkit-transition: transform 0.9s;
-}
-
-.frame1 {
-  position: relative;
-}
-
-.frame2 {
-  position: relative;
-  padding-bottom: 60px;
-}
-
-.goeventtitle,
-.goeventtitle1 {
-  color: black;
-  font-size: 25px;
-  font-weight: bold;
-
-  font-family: "Noto Sans", sans-serif;
-}
-
-.goeventcontent,
-.goeventcontent1 {
-  color: #a7a7a7;
-
-  font-family: "Noto Sans", sans-serif;
-  font-size: 15px;
-} */
 
 .number {
   all: unset;
@@ -527,14 +423,16 @@ img {
 }
 
 .footer {
-  all: unset;
+
+  width: 100vw;
+  height: 30vh;
   display: flex;
   flex-direction: column;
-
+  justify-content: center;
   align-items: center;
 
-  padding: 70px 90px;
   font-family: "Noto Sans KR", sans-serif;
+
 }
 
 .footer-box {
@@ -564,4 +462,23 @@ img {
 .madeBy {
   font-size: 13px;
   color: rgb(90, 89, 89);
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    height: 20vh;
+    justify-content: flex-start;
+ }
+
+  .logo > a {
+    font-size: 18px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .first {
+    flex-direction: column;
+  }
 }
