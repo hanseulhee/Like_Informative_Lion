@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="goToOtherPage.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image⁄x-icon" href="images/logo.png" />
+    <link rel="stylesheet" href="topButton.css">
+    
     <title>멋쟁이사자처럼 :: LIKELION</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap");
@@ -14,7 +17,8 @@
       @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Mukta:wght@600&display=swap");
     </style>
   </head>
-  <body style="overflow-x: hidden">
+  <body style="overflow-x: hidden" id="body">
+
     <div class="fullscreen-bg">
       <img src="images/mainbackground.png" />
     </div>
@@ -27,7 +31,7 @@
         <a href="#4">커리큘럼</a>
         <a href="#3">모집대상</a>
         <a href="#2">모집일정</a>
-        <a href="#4">멋사규칙</a>
+        <a href="#4">활동규칙</a>
         <a href="#5">
           other pages</a>
       </div>
@@ -78,11 +82,7 @@
             넷째 주 시간조정 ⁚ OT
           </p>
         </div>
-        <p class="content1">
-          The combination of clean architecture, natural light and durable
-          elements contribute to a productive and creative work space. Bring out
-          the best in yourself.
-        </p>
+      
       </div>
 
       <img src="images/main.png" class="whatlion" />
@@ -111,7 +111,7 @@
         <div class="target">
           <div class="two">
             <div class="contentbox">
-              <p class="title1">1</p>
+              
               <p class="content2">
                 
 💻 개인 노트북 소지자<br><br>
@@ -120,7 +120,7 @@
               </p>
             </div>
             <div class="contentbox">
-              <p class="title1">2</p>
+              
               <p class="content2">
                 📆 2021.03 ~ 2021.12 <br><br>
                 멋쟁이 사자처럼은 1년 단위로 짜여있어 활동 기간 내 어학연수나 장기여행 계획이 있다면 함께할 수 없어요.
@@ -130,7 +130,7 @@
 
           <div class="third">
             <div class="contentbox">
-              <p class="title1">3</p>
+             
               <p class="content2">
                 🕕 매주 화, 금 6시 ~ 9시
                 <br><br>
@@ -140,7 +140,7 @@
               </p>
             </div>
             <div class="contentbox">
-              <p class="title1">4</p>
+            
               <p class="content2">
                 👫🏻 공식행사 및 교내 멋사 일정에 참여 가능해야 합니다.
                 <br><Br>
@@ -168,7 +168,7 @@
     <p align="center">
       <video src="intro.mp4" controls id="video" class="screen">
        
-      </p>
+    </p>
 
    
   </div>
@@ -179,7 +179,7 @@
     </div>
     <div class="first">
       <div class="main">
-        <p class="thirdtitle">멋쟁이 사자처럼 9기 "멋사 규칙"</p>
+        <p class="thirdtitle">멋쟁이 사자처럼 9기 "활동 규칙"</p>
         <p class="content">
         🧐 성공회대학교 멋쟁이 사자처럼 9기 활동 규칙을 어길 시<br> 퇴출당할 수 있습니다. 꼼꼼히 살펴보고 지원해주시길 바랍니다.
         </p>
@@ -338,6 +338,15 @@ Open the rules of Likelion 9th</a>
     </div>
   </div>
 
+
+  <div class="topButton ">
+    <a href="#body"> 
+    <img class="topButtonImg topButton__hide js-topButton" src="images/gotop.png"></img>
+  </a>
+</div>
+
+
+    <script src="topButton.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
