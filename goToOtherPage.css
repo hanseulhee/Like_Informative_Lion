@@ -86,13 +86,14 @@
     font-size: 25px;
     font-weight: bold;
   
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
+
   }
   
   .goeventcontent {
     color: #a7a7a7;
-  
-    font-family: "Noto Sans", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
+
     font-size: 15px;
   }
 
