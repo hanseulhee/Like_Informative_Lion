@@ -59,6 +59,9 @@
 
     z-index: -1;
   }
+  .goevent > a{
+    all:unset;
+  }
   
   .goevent {
     all: unset;
