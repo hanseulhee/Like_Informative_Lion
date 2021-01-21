@@ -501,6 +501,10 @@ img {
   .whatlion {
     width: 30vw;
   }
+  .calendar {
+    height: 350px;
+    overflow: scroll;
+  }
 
   .slide {
     align-self: flex-start;
