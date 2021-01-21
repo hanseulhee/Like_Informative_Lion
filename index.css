@@ -459,13 +459,6 @@ img {
 }
 
 @media screen and (max-width: 1000px) {
-  /* .navbar {
-    height: 20vh;
-    width: fit-content; 이거하면 왼쪽 사이드 가 정렬이 안되는데 (근데 정렬을 해야지) 이걸 안하면 옆에 네브바가 튀어나와서 옆에 또 흰배경이 생기네
-    justify-content: flex-start;
-    margin-left: 13vw;
-  } */
-
   .navbar {
     justify-content: flex-start;
     width: 85vw;
@@ -502,7 +495,7 @@ img {
     width: 30vw;
   }
   .calendar {
-    height: 350px;
+    height: 333px;
     overflow: scroll;
   }
 
@@ -533,6 +526,8 @@ img {
   .curriculum {
     width: 30vw;
   }
+
+
   .label__first {
     margin: 30% 70%;
   }
