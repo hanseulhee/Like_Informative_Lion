@@ -495,7 +495,7 @@ img {
     width: 30vw;
   }
   .calendar {
-    height: 333px;
+   
     overflow: scroll;
   }
 
@@ -522,6 +522,7 @@ img {
   .move {
     width: 70%;
   }
+  
 
   .curriculum {
     width: 30vw;
