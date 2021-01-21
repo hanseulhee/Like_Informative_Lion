@@ -460,14 +460,20 @@ img {
 }
 
 @media screen and (max-width: 1000px) {
-  .navbar {
-    
+  /* .navbar {
     height: 20vh;
-    width: fit-content; /* 이거하면 왼쪽 사이드 가 정렬이 안되는데 (근데 정렬을 해야해) 이걸 안하면 옆에 네브바가 튀어나와서 옆에 또 흰배경이 생겨요 */
+    width: fit-content; 이거하면 왼쪽 사이드 가 정렬이 안되는데 (근데 정렬을 해야해) 이걸 안하면 옆에 네브바가 튀어나와서 옆에 또 흰배경이 생겨요
     justify-content: flex-start;
     margin-left: 13vw;
+  } */
+
+  .navbar{
+    justify-content: flex-start;
+    width: 85vw;
+ 
   }
 
+ 
 
   .menu {
     display: none;
@@ -491,7 +497,7 @@ img {
   width: 100vw;
 }
 .slide_item {
-  height: 37vh;
+  height: 35vh;
 }
 
   .whatlion2 {
@@ -501,9 +507,13 @@ img {
 .screen {
   margin-top: 15%;
   width: 100%;
-  height: 50vh;
+  height: 40vh;
 
   
+}
+
+.move {
+  width: 70%;
 }
 
 .curriculum {
@@ -515,10 +525,11 @@ img {
   margin: 30% 70%;
 }
 .footer {
-  height: 20vh;
+  height: 15vh;
 }
 
 
 
-
 }
+
+
