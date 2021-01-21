@@ -461,23 +461,64 @@ img {
 
 @media screen and (max-width: 1000px) {
   .navbar {
+    
     height: 20vh;
+    width: fit-content; /* 이거하면 왼쪽 사이드 가 정렬이 안되는데 (근데 정렬을 해야해) 이걸 안하면 옆에 네브바가 튀어나와서 옆에 또 흰배경이 생겨요 */
     justify-content: flex-start;
     margin-left: 13vw;
   }
 
-  .logo > a {
-    font-size: 20px;
-  }
 
   .menu {
     display: none;
   }
-  .center {
-    font-size: 33px;
-  }
+  .main {
+    height: 15vw;
+}
 
-  .first {
-    flex-direction: column;
-  }
+.content {
+  padding-bottom: 12%;
+}
+
+  .whatlion {
+    width: 30vw;
+}
+
+.slide {
+  align-self:flex-start;
+  margin-bottom: 30px;
+  padding-top: 18%;
+  width: 100vw;
+}
+.slide_item {
+  height: 37vh;
+}
+
+  .whatlion2 {
+    width: 40vw;
+}
+
+.screen {
+  margin-top: 15%;
+  width: 100%;
+  height: 50vh;
+
+  
+}
+
+.curriculum {
+  width: 30vw;
+
+}
+.label__first{
+  
+  margin: 30% 70%;
+}
+.footer {
+  height: 20vh;
+}
+
+
+
+
 }
