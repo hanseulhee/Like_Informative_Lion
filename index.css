@@ -482,8 +482,11 @@ img {
   }
 
   .content2 {
-    font-size: 20px;
+    font-size: 19px;
   }
+  .subheading {
+    
+    font-size: 30px;}
   .menu {
     display: none;
   }
