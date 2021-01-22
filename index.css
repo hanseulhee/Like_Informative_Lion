@@ -170,7 +170,7 @@ img {
 }
 .content {
   font-size: 18px;
-  color: rgba(32, 35, 39, 0.9);
+  color: black;
   font-family: "Noto Sans KR", sans-serif;
 }
 
@@ -256,7 +256,8 @@ img {
 
   font-family: "Noto Sans KR", sans-serif;
 
-  color: rgba(32, 35, 39, 0.9);
+
+  color: black;
 }
 
 .whatlion2 {
@@ -447,6 +448,11 @@ img {
   margin-bottom: 1%;
 }
 
+.footer-box-2> a{
+  all: unset;
+  color: black;
+}
+
 .footer i {
   color: #f6921e;
   padding-left: 2rem;
@@ -455,7 +461,7 @@ img {
 
 .madeBy {
   font-size: 13px;
-  color: rgb(90, 89, 89);
+  color: rgb(73, 73, 73);
 }
 
 @media screen and (max-width: 1000px) {
