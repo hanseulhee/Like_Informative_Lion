@@ -485,7 +485,7 @@ img {
   }
   .subheading {
     
-    font-size: 31px;}
+    font-size: 45px;}
   .menu {
     display: none;
   }
@@ -542,24 +542,11 @@ img {
     height: 15vh;
   }
 
-  .application {
-   
-    font-size: 45px;
-  
-  }
 
   .header{
     height: 60vh;
 
 }
 
-.subheading {
- 
-  font-size: 45px; 
-}
 
-.subheading1 {
-  font-size: 40px;
-  
-}
 }

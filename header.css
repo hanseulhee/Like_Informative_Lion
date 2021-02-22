@@ -1,233 +1,242 @@
+.header {
+  width: 100vw;
+  height: 70vh;
 
-.header{
-    width: 100vw;
-    height: 70vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .title {
-    position: relative;
-    font-size: 84px;
+  position: relative;
+  font-size: 84px;
+  color: white;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  margin-left: 7.5vw;
+}
+
+.subheading {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  color: WHITE;
+
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+
+  margin-left: 7.5vw;
+}
+
+.subheading1 {
+  position: absolute;
+  all: unset;
+  font-size: 23px;
+  font-family: "Noto Sans", sans-serif;
+  margin-left: 2px;
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.application {
+  all: unset;
+  font-family: "Noto Sans KR", sans-serif;
+
+  letter-spacing: 2;
+
+  text-transform: uppercase;
+  font-size: 27px;
+  color: white;
+  text-shadow: 0 0 0.1rem#dcdde1, 0 0 0.1rem #dfe6e9,
+    -0.2rem 0.1rem 1rem #3d3d3d, 0.1rem 0.1rem 1rem#3d3d3d,
+    0 -0.3rem 1rem #3d3d3d, 0 0.3rem 1rem#3d3d3d;
+  animation: shine 2s forwards, flicker 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
     color: white;
-  
-    font-family: "Noto Sans KR", sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
+    text-shadow: 0 0 0.1rem #dcdde1, 0 0 0.1rem#dfe6e9,
+      -0.2rem 0.1rem 0.2rem #4b4b4b, 0.1rem 0.1rem 0.2rem #4b4b4b,
+      0 -0.3rem 1rem#3d3d3d, 0 0.3rem 1rem#3d3d3d;
+  }
+  28%,
+  33% {
+    color: white;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: white;
+    text-shadow: none;
+  }
+}
 
+.flicker {
+  animation: shine 10s forwards, blink 5s 3s;
+  animation-iteration-count: 1;
+}
 
-    margin-left: 7.5vw;
-  } 
-  
+.fast-flicker {
+  animation: shine 12s forwards, blink 7s 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes shine {
+  0% {
+    text-shadow: none;
+  }
+  100% {
+    color: rgb(255, 255, 255, 0.7);
+    text-shadow: 0 0 0.1rem #dfe6e9, 0 0 0.2rem #dfe6e9,
+      -0.1rem 0.1rem 0.2rem #4b4b4b, 0.1rem 0.1rem 0.2rem #4b4b4b,
+      0 -0.3rem 1rem#3d3d3d, 0 0.4rem 1rem #3d3d3d;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.7;
+  }
+
+  6% {
+    opacity: 0.8;
+  }
+
+  8% {
+    opacity: 0.98;
+  }
+
+  10% {
+    opacity: 0.7;
+  }
+
+  11% {
+    opacity: 0.92;
+  }
+
+  12% {
+    opacity: 0.8;
+  }
+
+  14% {
+    opacity: 0.91;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.82;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.97;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.52;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.92;
+  }
+
+  56% {
+    opacity: 0.83;
+  }
+
+  58% {
+    opacity: 0.94;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.83;
+  }
+
+  72% {
+    opacity: 0.89;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.96;
+  }
+
+  97% {
+    opacity: 0.91;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   .subheading {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    font-size: 28px;
-    color: WHITE;
-  
-    font-family: "Noto Sans", sans-serif;
-    font-weight: 700;
-
-    margin-left: 7.5vw;
-  }
-  
-  .subheading1 {
-    position: absolute;
-    all: unset;
-    font-size: 23px;
-    font-family: "Noto Sans", sans-serif;
-    margin-left: 2px;
-    color: rgb(255, 255, 255, 0.6);
+    font-size: 45px;
   }
 
+  .header {
+    height: 65vh;
+  }
 
   .application {
-    all: unset;
-    font-family: "Noto Sans KR", sans-serif;
-  
-    letter-spacing: 2;
-  
-    text-transform: uppercase;
-    font-size: 27px;
-    color: white;
-    text-shadow: 0 0 0.1rem#dcdde1, 0 0 0.1rem #dfe6e9,
-      -0.2rem 0.1rem 1rem #3d3d3d, 0.1rem 0.1rem 1rem#3d3d3d,
-      0 -0.3rem 1rem #3d3d3d, 0 0.3rem 1rem#3d3d3d;
-    animation: shine 2s forwards, flicker 3s;
-    animation-iteration-count: 1;
-  }
-  
-  @keyframes blink {
-    0%,
-    22%,
-    36%,
-    75% {
-      color: white;
-      text-shadow: 0 0 0.1rem #dcdde1, 0 0 0.1rem#dfe6e9,
-        -0.2rem 0.1rem 0.2rem #4b4b4b, 0.1rem 0.1rem 0.2rem #4b4b4b,
-        0 -0.3rem 1rem#3d3d3d, 0 0.3rem 1rem#3d3d3d;
-    }
-    28%,
-    33% {
-      color: white;
-      text-shadow: none;
-    }
-    82%,
-    97% {
-      color: white;
-      text-shadow: none;
-    }
-  }
-  
-  .flicker {
-    animation: shine 10s forwards, blink 5s 3s;
-    animation-iteration-count: 1;
-  }
-  
-  .fast-flicker {
-    animation: shine 12s forwards, blink 7s 4s;
-    animation-iteration-count: 1;
-  }
-  
-  @keyframes shine {
-    0% {
-      text-shadow: none;
-    }
-    100% {
-      color: rgb(255, 255, 255, 0.7);
-      text-shadow: 0 0 0.1rem #dfe6e9, 0 0 0.2rem #dfe6e9,
-        -0.1rem 0.1rem 0.2rem #4b4b4b, 0.1rem 0.1rem 0.2rem #4b4b4b,
-        0 -0.3rem 1rem#3d3d3d, 0 0.4rem 1rem #3d3d3d;
-    }
-  }
-  
-  @keyframes flicker {
-    from {
-      opacity: 1;
-    }
-  
-    4% {
-      opacity: 0.7;
-    }
-  
-    6% {
-      opacity: 0.8;
-    }
-  
-    8% {
-      opacity: 0.98;
-    }
-  
-    10% {
-      opacity: 0.7;
-    }
-  
-    11% {
-      opacity: 0.92;
-    }
-  
-    12% {
-      opacity: 0.8;
-    }
-  
-    14% {
-      opacity: 0.91;
-    }
-  
-    16% {
-      opacity: 0.98;
-    }
-  
-    17% {
-      opacity: 0.82;
-    }
-  
-    19% {
-      opacity: 0.93;
-    }
-  
-    20% {
-      opacity: 0.97;
-    }
-  
-    24% {
-      opacity: 1;
-    }
-  
-    26% {
-      opacity: 0.94;
-    }
-  
-    28% {
-      opacity: 0.98;
-    }
-  
-    37% {
-      opacity: 0.93;
-    }
-  
-    38% {
-      opacity: 0.52;
-    }
-  
-    39% {
-      opacity: 0.96;
-    }
-  
-    42% {
-      opacity: 1;
-    }
-  
-    44% {
-      opacity: 0.97;
-    }
-  
-    46% {
-      opacity: 0.92;
-    }
-  
-    56% {
-      opacity: 0.83;
-    }
-  
-    58% {
-      opacity: 0.94;
-    }
-  
-    60% {
-      opacity: 0.99;
-    }
-  
-    68% {
-      opacity: 1;
-    }
-  
-    70% {
-      opacity: 0.83;
-    }
-  
-    72% {
-      opacity: 0.89;
-    }
-  
-    93% {
-      opacity: 0.93;
-    }
-  
-    95% {
-      opacity: 0.96;
-    }
-  
-    97% {
-      opacity: 0.91;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  
+  font-size: 45px;}
+}
