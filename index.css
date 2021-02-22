@@ -547,4 +547,19 @@ img {
     font-size: 45px;
   
   }
+
+  .header{
+    height: 60vh;
+
+}
+
+.subheading {
+ 
+  font-size: 45px; 
+}
+
+.subheading1 {
+  font-size: 40px;
+  
+}
 }
