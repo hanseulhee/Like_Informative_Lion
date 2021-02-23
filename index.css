@@ -159,7 +159,32 @@ img {
   height: 330px;
 
   border-left: 2px solid rgb(0, 0, 0, 0.5);
+  overflow-y: scroll;
 }
+
+.calendar::-webkit-scrollbar {
+  all: unset;
+  height: 16px;
+}
+
+.calendar::-webkit-scrollbar-thumb {
+  all: unset;
+  border-radius: 20px;
+  width: 0px;
+  background: linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    rgba(0, 0, 0, 0.2),
+    #ffffff,
+    #ffffff,
+    #ffffff,
+    #ffffff
+  );
+}
+
 
 .secondtitle {
   font-weight: 700;
