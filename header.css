@@ -228,7 +228,7 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+ @media screen and (max-width: 1000px) {
   .subheading {
     font-size: 41px;
   }
@@ -239,4 +239,4 @@
 
   .application {
   font-size: 45px;}
-}
+} 
